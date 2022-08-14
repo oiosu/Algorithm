@@ -76,9 +76,9 @@ Heap 힙 Tree 트리, Graph 그래프
 
 ---
 
-### [✍ Chapter 1. 시간 복잡도 & 빅오표기법](https://github.com/oiosu/Algorithm_MT/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B0%9C%EB%85%90/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%202DAY.md) 
+## [✍ Chapter 1. 시간 복잡도 & 빅오표기법](https://github.com/oiosu/Algorithm_MT/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B0%9C%EB%85%90/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%202DAY.md) 
 
-#### (1) Time Complexity 시간 복잡도 
+### (1) Time Complexity 시간 복잡도 
 
 > input을 넣은 후 output이 나오는 시간이 짧은 알고리즘이 좋은 알고리즘 
 
@@ -105,15 +105,15 @@ def count(word, char):
 ![image](https://user-images.githubusercontent.com/99783474/184548337-75a3b6d9-3305-430d-8415-d5f256a0b9f5.png)
 
 
-#### (2) Big-O 빅오표기법 
+### (2) Big-O 빅오표기법 
 
 ![image](https://user-images.githubusercontent.com/99783474/184548438-c6f8b25e-d29e-412b-a1c6-8889fcfd5eff.png)
 
 ---
 
-### [✍ Chapter 2. List 리스트](https://github.com/oiosu/Algorithm_MT/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B0%9C%EB%85%90/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%202DAY.md) 
+## [✍ Chapter 2. List 리스트](https://github.com/oiosu/Algorithm_MT/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B0%9C%EB%85%90/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%202DAY.md) 
 
-#### (1) Array 배열 VS Linked List 연결리스트 
+### (1) Array 배열 VS Linked List 연결리스트 
 
 | Array 배열                                                   | Linked List 연결 리스트                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -124,7 +124,7 @@ def count(word, char):
 | 데이터 타입은 고정                                           | 데이터가 메모리에 연속적으로 저장되지 않음                   |
 
 
-#### (2) 파이썬의 리스트
+### (2) 파이썬의 리스트
 
 	 .append(원소) : 리스트 맨 끝에 새로운 원소 삽입
 	 .pop(인덱스) : 특정 인덱스에 있는 원소를 삭제 및 반환 
@@ -138,11 +138,11 @@ def count(word, char):
 	 sorted(iterable) : 오름차순으로 정렬된 새로운 리스트 반환 (반환 리스트는 변화 없음)
 	 reversed(iterable)  : 리스트의 순서를 거꾸로 뒤집은 새로운 객체 반환 (원본 리스트는 변화 없음 )
 
-#### 🔹 자주 쓰이는 리스트 관련 내장함수 
+### 🔹 자주 쓰이는 리스트 관련 내장함수 
 
 > len(), sum(), max(), min(), sorted(), reverse()
 
-#### (3) List Comprehension 리스트 컴프리헨션
+### (3) List Comprehension 리스트 컴프리헨션
 
 ```python
 numbers = []
@@ -164,12 +164,46 @@ print(odd_numbers)
 
 ---
 
-### [✍ Chapter 3. String 문자열](https://github.com/oiosu/Algorithm_MT/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B0%9C%EB%85%90/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%203DAY.md)
+## [✍ Chapter 3. String 문자열](https://github.com/oiosu/Algorithm_MT/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B0%9C%EB%85%90/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%203DAY.md)
 
 _ **immutabel (변경불가능한)** 자료형
 
-#### (1) 문자열 슬라이싱 
+### (1) 문자열 슬라이싱 
 
-#### (2) 문자열 메소드 
+### (2) 문자열 메소드 
 
-#### (3) 아스키 ASCII코드 
+	.split(기준 문자) :  문자열을 일정 기준으로 나누어 리스트로 반환(괄호 안에 아무것도 넣지 않으면 자동으로 공백을 기준으로 설정)
+	
+	.strip(제거할 문자)
+	: 문자열의 양쪽 끝에 있는 특정 문자를 모두 제거한 새로운 문자열 반환
+	: 괄호안에 아무것도 넣지 않으며 자동으로 공백을 제거 문자로 설정 
+	: 제거할 문자를 여러 개 넣으면 해당하는 모든 문자들을 제거 
+	
+	.find(찾는문자) : 특정 문자가 처음으로 나타나는 위치(인덱스)를 반환 (찾는 문자가 없다면 -1을 반환 )
+	VS  index()
+	=> 특정 문자가 처음으로 나타나는 위치(인덱스)를 반환 
+	=> 찾는 문자가 없다면 오류 발생
+	
+	.index(찾는문자) : 특정 문자가 처음으로 나타나는 위치(인덱스)를 반환 (찾는 문자가 없다면 오류 발생)
+	.count(개수를 셀 문자) : 문자열에서 특정 문자가 몇개인지 반환 (문자 뿐만 아니라, 문자열의 개수도 확인 가능)
+	
+	.replace(기존문자, 새로운문자) 
+	: 문자열에서 기존 문자를 새로운 문자로 수정한 새로운 문자열 반환 
+	: 특정 문자를 빈 문자열(" ")로 수정하여 망치 해당 문자를 삭제한 것 같은 효과 가능
+	
+	
+### (3) 아스키 ASCII코드 
+
+```python
+# 문자 _ 아스키코드로 변환하는 내장함수 
+
+print(ord("A")) #65
+print(ord("a")) #97
+```
+
+```python
+# 아스키코드 _ 문자로 변환하는 내장함수 
+
+print(chr("65")) #A
+print(chr("97")) #a
+```
