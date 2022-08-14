@@ -76,4 +76,51 @@ Heap 힙 Tree 트리, Graph 그래프
 
 ---
 
+### [✍ Chapter 1. 시간 복잡도 & 빅오표기법](https://github.com/oiosu/Algorithm_MT/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B0%9C%EB%85%90/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%202DAY.md) 
+
+#### (1) Time Complexity 시간 복잡도 
+
+> input을 넣은 후 output이 나오는 시간이 짧은 알고리즘이 좋은 알고리즘 
+
+```python
+def count(word, char):
+	total = 0 
+	
+	for i in word:
+		if i == chr:
+			total += 1
+			
+	return total 
+	
+# 기본 연산 : 단위 시간 1이 소요되는 시간 
+# ⭐기본 연산의 총 횟수 == 알고리즘의 소요시간 
+```
+      시간 복잡도가 높다 => 느린 알고리즘
+   
+      시간 복잡도가 낮다 => 빠른 알고리즘
+      
+      
+◻ 복잡한 정도 
+
+![image](https://user-images.githubusercontent.com/99783474/184548337-75a3b6d9-3305-430d-8415-d5f256a0b9f5.png)
+
+
+#### (2) Big-O 빅오표기법 
+
+![image](https://user-images.githubusercontent.com/99783474/184548423-10cca159-a648-4d40-9cf5-4a8a2c3c43fe.png)
+![image](https://user-images.githubusercontent.com/99783474/184548438-c6f8b25e-d29e-412b-a1c6-8889fcfd5eff.png)
+
+---
+
+### [✍ Chapter 2. List 리스트](https://github.com/oiosu/Algorithm_MT/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B0%9C%EB%85%90/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%202DAY.md) 
+
+#### (1) Array 배열 VS Linked List 연결리스트 
+
+| Array 배열                                                   | Linked List 연결 리스트                                      |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 요일마다 먹는 약통💊을 생각해 보자                            | 데이터가 담긴 여러 노드들이 순차적으로 연결된 형태의 자료구조 |
+| **여러 데이터들이 연속된 메모리 공간에 저장되어 있는 자료구조** | 맨처음 노드부터 순차적으로 탐색                              |
+| 인덱스를 통해 데이터에 빠르게 접근                           | 연결 리스트의 길이 자유롭게 변경 가능 => 삽입, 삭제가 편리   |
+| 배열의 길이는 변경이 불가능 => 길이를 변경하고 싶다면 새로 생성 | 다양한 데이터 타입 저장                                      |
+| 데이터 타입은 고정                                           | 데이터가 메모리에 연속적으로 저장되지 않음                   |
 
