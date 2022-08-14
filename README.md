@@ -138,4 +138,38 @@ def count(word, char):
 	 sorted(iterable) : 오름차순으로 정렬된 새로운 리스트 반환 (반환 리스트는 변화 없음)
 	 reversed(iterable)  : 리스트의 순서를 거꾸로 뒤집은 새로운 객체 반환 (원본 리스트는 변화 없음 )
 
+#### 🔹 자주 쓰이는 리스트 관련 내장함수 
 
+> len(), sum(), max(), min(), sorted(), reverse()
+
+#### (3) List Comprehension 리스트 컴프리헨션
+
+```python
+numbers = []
+for i in range(5):
+	numbers.append(i)
+    
+# 이 부분을 한 줄로 만들어 본다면? 
+numbers = [i for i in range(5)]
+
+# if 문으로 필터링도 가능하다. 
+odd_numbers = [i for i in range(10) if i % 2 == 1]
+print(odd_numbers)
+```
+
+
+### 🛠 [리스트 자료형과 메서드의 시간 복잡도](https://chancoding.tistory.com/43)
+
+### 🛠 [집합(set)자료형과 메소드의 시간 복잡도](https://chancoding.tistory.com/43)
+
+---
+
+### [✍ Chapter 3. String 문자열](https://github.com/oiosu/Algorithm_MT/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B0%9C%EB%85%90/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%203DAY.md)
+
+_ **immutabel (변경불가능한)** 자료형
+
+#### (1) 문자열 슬라이싱 
+
+#### (2) 문자열 메소드 
+
+#### (3) 아스키 ASCII코드 
