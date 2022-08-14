@@ -107,7 +107,6 @@ def count(word, char):
 
 #### (2) Big-O 빅오표기법 
 
-![image](https://user-images.githubusercontent.com/99783474/184548423-10cca159-a648-4d40-9cf5-4a8a2c3c43fe.png)
 ![image](https://user-images.githubusercontent.com/99783474/184548438-c6f8b25e-d29e-412b-a1c6-8889fcfd5eff.png)
 
 ---
@@ -123,4 +122,20 @@ def count(word, char):
 | 인덱스를 통해 데이터에 빠르게 접근                           | 연결 리스트의 길이 자유롭게 변경 가능 => 삽입, 삭제가 편리   |
 | 배열의 길이는 변경이 불가능 => 길이를 변경하고 싶다면 새로 생성 | 다양한 데이터 타입 저장                                      |
 | 데이터 타입은 고정                                           | 데이터가 메모리에 연속적으로 저장되지 않음                   |
+
+
+#### (2) 파이썬의 리스트
+
+	 .append(원소) : 리스트 맨 끝에 새로운 원소 삽입
+	 .pop(인덱스) : 특정 인덱스에 있는 원소를 삭제 및 반환 
+	 .count(원소) : 리스트에서 해당 원소의 개수를 반환 
+	 .index(원소) : 리스트에서 처음으로 원소가 등장하는 인덱스 반환
+	 .sort() : 리스트를 오름차순으로 정렬 (reverse = True 옵션을 통해 내림차순으로 정렬가능 )
+	 .reverse() : 리스트의 원소들의 순서를 거꾸로 뒤집기 
+	 len(iterable) : 리스트의 길이(원소의 개수)를 반환
+	 sum(iterable) : 리스트의 모든 원소의 합을 반환 
+	 max(iterable) & min(iterable) : 리스트의 원소 중 최대 & 최소값을 반환
+	 sorted(iterable) : 오름차순으로 정렬된 새로운 리스트 반환 (반환 리스트는 변화 없음)
+	 reversed(iterable)  : 리스트의 순서를 거꾸로 뒤집은 새로운 객체 반환 (원본 리스트는 변화 없음 )
+
 
